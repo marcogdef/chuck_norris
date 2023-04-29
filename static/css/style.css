@@ -1,0 +1,15 @@
+.container{
+    background-color: #F0F0C9;
+    width: 430px;
+    height: 932px;
+}
+
+#error{
+    color: red;
+}
+
+.clickB{
+    height: 48px;
+    width: 364px;
+    background-color: #780116;
+}
