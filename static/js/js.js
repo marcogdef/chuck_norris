@@ -94,5 +94,11 @@ document.querySelector("a").addEventListener("click", function(e){
     mi interessa. All'interno di questa "then" posso accedere ai campi che
     voglio utilizzare.
     */
+   function FunctionCopy(){
+    let copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(copyText.value);
+   }
 
 })
