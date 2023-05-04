@@ -27,7 +27,12 @@
     left: 33px;
     top: 759px;
     background-color: #780116;
+}
+
+.scrittaB{
+    font-family: 'Concert One';
     color: white;
+    text-decoration: none;
 }
 
 #joke{
@@ -37,6 +42,7 @@
     left: 33px;
     top: 284px;
     background-color: #E1E1E1;
+    font-family: 'Concert One';
 }
 
 .title{
@@ -55,7 +61,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #D8572A;
-    border: 1px solid #000000;
 }
 
 .selectClass{
@@ -68,30 +73,32 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.copyButton{
-    background-color: #D8572A;
+.mitraimg{
     position: absolute;
-    width: 185px;
-    height: 33px;
-    left: 123px;
-    top: 825px;
+    width: 111px;
+    height: 92px;
+    left: 305px;
+    top: 87px;
+}
 
+
+.copia{
+    position: absolute;
+    left: 129.61px;
+    top: 828.82px;
+
+    font-family: 'Concert One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 

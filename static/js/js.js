@@ -94,21 +94,16 @@ document.querySelector("a").addEventListener("click", function(e){
     mi interessa. All'interno di questa "then" posso accedere ai campi che
     voglio utilizzare.
     */
-   function FunctionCopy(){
-    let copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); 
-    navigator.clipboard.writeText(copyText.value);
-   }
-
-   //Parte dropbox
-   let categories = ["animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"]
-   for(let i = 0;i<categories.length;i++){
-    let opt = document.createElement("option")
-    opt.value = categories[i]
-    opt.innerHTML = categories[i].toUpperCase()
-
-    document.querySelector("select[name=category]").appendChild(opt)
-   }
+    function copia(testo) {
+        let input = document.createElement('input');
+        let joke = document.getElementById(testo).value;
+        input.setAttribute('value', joke);
+        document.body.appendChild(input);
+        input.select();
+        let risultato = document.execCommand('copy');
+        document.body.removeChild(input);
+        alert('testo copiato: '+ joke);
+        return risultato;
+     }
 
 })
