@@ -16,24 +16,40 @@
                 </a>
             </button>
     
-        <div id="joke">
+        <div class="jokeContainer">
+            <div id="joke">
             
+            </div>
         </div>
-    
         <div id="error">
     
         </div>
         <div class="chuckgif">
             <img src="static/images/chucknorris.gif" alt="">
         </div>
-        <div class="dropdown">
-            <button class="dropbtn"></button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+        <form id="myForm">
+            <div>
+                <select class="selectClass">
+                    <option value="" selected disabled>Scegli la categoria</option>
+                    <option value="animal">Animali</option>
+                    <option value="career">Career</option>
+                    <option value="celebrity">Celebrità</option>
+                    <option value="dev">dev</option>
+                    <option value="explicit">explicit</option>
+                    <option value="fashion">fashion</option>
+                    <option value="food">cibo</option>
+                    <option value="history">storia</option>
+                    <option value="money">Soldi</option>
+                    <option value="movie">film</option>
+                    <option value="music">musica</option>
+                    <option value="political">politica</option>
+                    <option value="religion">religione</option>
+                    <option value="science">scienza</option>
+                    <option value="sport">sport</option>
+                    <option value="travel">viaggi</option>
+                </select>
             </div>
-          </div>
+        </form>
           <div class="title">JOKE CHUCK NORRIS</div>
         <div class="copyButton">
             <input type="text" value="Hello World" id="myInput">

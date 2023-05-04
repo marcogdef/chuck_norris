@@ -101,4 +101,14 @@ document.querySelector("a").addEventListener("click", function(e){
     navigator.clipboard.writeText(copyText.value);
    }
 
+   //Parte dropbox
+   let categories = ["animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"]
+   for(let i = 0;i<categories.length;i++){
+    let opt = document.createElement("option")
+    opt.value = categories[i]
+    opt.innerHTML = categories[i].toUpperCase()
+
+    document.querySelector("select[name=category]").appendChild(opt)
+   }
+
 })
