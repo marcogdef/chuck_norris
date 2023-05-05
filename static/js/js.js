@@ -94,16 +94,10 @@ document.querySelector("a").addEventListener("click", function(e){
     mi interessa. All'interno di questa "then" posso accedere ai campi che
     voglio utilizzare.
     */
-    function copia(testo) {
-        let input = document.createElement('input');
-        let joke = document.getElementById(testo).value;
-        input.setAttribute('value', joke);
-        document.body.appendChild(input);
-        input.select();
-        let risultato = document.execCommand('copy');
-        document.body.removeChild(input);
-        alert('testo copiato: '+ joke);
-        return risultato;
-     }
 
 })
+
+let copyBtn = document.querySelector(".copyButton")
+copyBtn.addEventListener("click", function(e){
+copiaTesto()
+alert("Battuta copiata nella clipboard")})
